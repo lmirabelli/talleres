@@ -1,0 +1,68 @@
+.result, .partInd, .tabla{
+    width: 44vw;
+    margin: 5px auto;
+    padding: 10px 0;
+    background-color: rgba($color6, .4);
+    box-shadow: 16px 16px 10px rgba($color6, .3);
+    border: 0.5px solid $color7;
+    color: $color1;
+    font-size: 3vw;
+    filter: drop-shadow(3px 3px 6px $color6);
+    .renglon{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        transition: 600ms all ease;
+        .fechaFixture{
+            width: 16%;
+            text-align: end;
+        }
+        .rivalFixture{
+            width:38%
+        }
+        .escudito{
+            width: 4%;
+            img{
+                height: 20px;
+                max-width: 20px;
+            }
+        }
+        .condFixture{
+            width: 18%;
+        }
+        .golFixture{
+            width: 12%;
+        }
+        .eqTabla{
+            width: 30%;
+            margin-left: 7%;
+            font-size: 1vw;
+        }
+        .resT{
+            width: 9%;
+            text-align: center;
+        }
+        .pts{
+            font-weight: 800;
+        }
+        div{
+            color: $color7;
+            font-size: 1.3vw;
+            margin: 2px 5px;
+        }
+        &:hover{
+            background-color: rgba($color6, .4);
+            cursor: pointer;
+        }
+    }
+}
+
+.galeria{
+    max-width: 40vw;
+    margin-left: 3vw;
+    img{
+        width: 40vw;
+        border: 2px solid $color7;
+        box-shadow: 2vw 2vw 5vw $color6;
+    }
+}

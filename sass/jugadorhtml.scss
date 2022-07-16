@@ -1,0 +1,54 @@
+#card-Nombre{
+    grid-area: card-nombre;
+}
+#card-Nac{
+    grid-area: card-nac;
+}
+#card-Cantera{
+    grid-area: card-cant;
+}
+#card-Imagen{
+    grid-area: card-img;
+}
+section{
+    min-height: calc(100vh - 60px);
+}
+.card{
+    display: grid;
+    grid-template-areas:
+    "card-img card-img card-img . . ."
+    "card-img card-img card-img card-nombre card-nombre card-nombre"
+    "card-img card-img card-img card-nac card-nac card-nac"
+    "card-img card-img card-img card-cant card-cant card-cant"
+    "card-img card-img card-img . . .";
+    margin: 120px 15vw 20px 15vw;
+    width: 70vw;
+    height: 275px;
+    background-color: rgba($color6, 0.4);
+    padding: 20px;
+    border: 3px solid $color7;
+    border-radius: 3vw;
+    backdrop-filter: blur(6px);
+    box-shadow: 3px 3px 25px rgba($color6, 0.75);
+    .card-imagen{
+        img{
+            transition: 1.5s all ease;
+            border-radius: 50%;
+            border: 2px solid $color7;
+            filter: drop-shadow(0px 0px 20px rgba($color7, 0.3));
+            &:hover{
+                transform: scale(1.3) rotate(360deg);
+            }
+        }
+    }
+    .card-renglon{
+        color: $color7;
+        font-size: 2vw;
+        margin: 5px 0px;
+        img{
+            height: 2vw;
+        }
+    }
+
+
+}

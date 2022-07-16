@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "Mukta";
+  src: url("Mukta.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta";
+}
+
+body {
+  background-color: #B00000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(114,680,347)'%3E%3Cstop offset='0' stop-color='%23B00000'/%3E%3Cstop offset='1' stop-color='%23630000'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='300' height='250' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.04'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  height: 60px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  margin: 2px 5px;
+  font-size: 20px;
+}
+footer img {
+  width: 34px;
+  height: 34px;
+}
+
+::-webkit-scrollbar {
+  width: calc(1vw + 2px);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e20000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #630000;
+  border-radius: 0.5vw;
+  border: 1px solid #fff;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #630000;
+}
+
+h1 {
+  grid-area: h1;
+}
+
+#jug {
+  grid-area: jug;
+}
+
+#resultados {
+  grid-area: fixture;
+}
+
+#ultPart {
+  grid-area: ult;
+}
+
+#proxPart {
+  grid-area: prox;
+}
+
+#tablaActual {
+  grid-area: tabAct;
+}
+
+#fotoIndex {
+  grid-area: fotoIndex;
+}
+
+.seccion-index {
+  display: grid;
+  grid-template-areas: "h1 h1 h1 h1 h1 h1" "jug jug jug jug jug jug" "fixture fixture fixture . . ." "fixture fixture fixture ult ult ult" "fixture fixture fixture prox prox prox" "fixture fixture fixture . . ." "fixture fixture fixture tabAct tabAct tabAct" "fixture fixture fixture tabAct tabAct tabAct" "fixture fixture fixture tabAct tabAct tabAct" "fixture fixture fixture tabAct tabAct tabAct" ". . . tabAct tabAct tabAct" "fotoIndex fotoIndex fotoIndex tabAct tabAct tabAct" "fotoIndex fotoIndex fotoIndex tabAct tabAct tabAct" ". . . tabAct tabAct tabAct";
+}
+
+nav .menu {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(3px);
+  width: 80vw;
+  margin-left: 10%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #000;
+  border-radius: 0px 0px 2vw 2vw;
+  border-top: 0px;
+  transition: 500ms all ease;
+}
+nav .menu img {
+  height: 70px;
+  margin-top: 5px;
+  filter: drop-shadow(5px 5px 7px #000);
+  transition: 500ms all ease;
+}
+nav .menu .botones {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+nav .menu .botones a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0px 1vw 20px 1vw;
+  padding: 0px 1vw;
+  transition: 300ms;
+}
+nav .menu .botones a:hover {
+  color: #000;
+  filter: drop-shadow(0px 0px 15px #fff);
+}
+nav .menu:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+nav .menu:hover img {
+  transform: rotate(25deg);
+}
+
+h1 {
+  width: 94vw;
+  margin: 120px 3vw 20px 3vw;
+  text-align: center;
+  font-size: 4vw;
+  color: #fff;
+  filter: drop-shadow(1vw 1vw 2vw #000);
+}
+
+.banner {
+  margin: 15px 5vw 20px 5vw;
+  padding: 20px 0px;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+.banner .fotoBanner {
+  width: 4.5vw;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0px -0.3vw;
+  transition: 300ms all ease;
+  filter: drop-shadow(6px 6px 10px #000);
+}
+.banner .fotoBanner:hover {
+  transform: rotate(15deg) scale(1.3);
+  filter: sepia(0.4);
+}
+
+#card-Nombre {
+  grid-area: card-nombre;
+}
+
+#card-Nac {
+  grid-area: card-nac;
+}
+
+#card-Cantera {
+  grid-area: card-cant;
+}
+
+#card-Imagen {
+  grid-area: card-img;
+}
+
+section {
+  min-height: calc(100vh - 60px);
+}
+
+.card {
+  display: grid;
+  grid-template-areas: "card-img card-img card-img . . ." "card-img card-img card-img card-nombre card-nombre card-nombre" "card-img card-img card-img card-nac card-nac card-nac" "card-img card-img card-img card-cant card-cant card-cant" "card-img card-img card-img . . .";
+  margin: 120px 15vw 20px 15vw;
+  width: 70vw;
+  height: 275px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border: 3px solid #fff;
+  border-radius: 3vw;
+  backdrop-filter: blur(6px);
+  box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.75);
+}
+.card .card-imagen img {
+  transition: 1.5s all ease;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.3));
+}
+.card .card-imagen img:hover {
+  transform: scale(1.3) rotate(360deg);
+}
+.card .card-renglon {
+  color: #fff;
+  font-size: 2vw;
+  margin: 5px 0px;
+}
+.card .card-renglon img {
+  height: 2vw;
+}
+
+.plantel {
+  margin: 120px 8vw 30px 8vw;
+  width: 84vw;
+  border: 3px solid #fff;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+.plantel .plantel-renglon {
+  margin: 3px 0;
+  padding: 3px 0;
+  height: 46px;
+  transition: 450ms;
+}
+.plantel .plantel-renglon:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.plantel .plantel-renglon a {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+}
+.plantel .plantel-renglon a .plantel-img {
+  width: 10%;
+}
+.plantel .plantel-renglon a .plantel-img img {
+  padding-left: calc(50% - 20px);
+  height: 40px;
+}
+.plantel .plantel-renglon a .plantel-nombre, .plantel .plantel-renglon a .plantel-nacimiento, .plantel .plantel-renglon a .plantel-cantera {
+  color: #fff;
+  padding-top: 8px;
+  filter: drop-shadow(0px 0px 5px #e84545);
+  text-align: center;
+}
+.plantel .plantel-renglon a .plantel-nombre {
+  width: 35%;
+}
+.plantel .plantel-renglon a .plantel-nacimiento {
+  width: 25%;
+}
+.plantel .plantel-renglon a .plantel-cantera {
+  width: 30%;
+}
+.plantel .plantel-renglon a .plantel-cantera img {
+  height: 20px;
+}
+
+.historial {
+  width: 76vw;
+  margin: 120px 12vw 35px 12vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding-top: 35px;
+}
+.historial .renglon-partido {
+  display: flex;
+  color: #fff;
+  font-size: 16px;
+  height: 24px;
+  transition: 450ms;
+}
+.historial .renglon-partido:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.historial .renglon-partido .datos-partido {
+  width: 22%;
+  text-align: center;
+  line-height: 24px;
+}
+.historial .renglon-partido .datos-partido img {
+  height: 16px;
+  padding-top: 4px;
+}
+.historial .renglon-partido .gol-partido {
+  text-align: center;
+  width: 8%;
+}
+
+.result, .partInd, .tabla {
+  width: 44vw;
+  margin: 5px auto;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid #fff;
+  color: #e20000;
+  font-size: 3vw;
+  filter: drop-shadow(3px 3px 6px #000);
+}
+.result .renglon, .partInd .renglon, .tabla .renglon {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 600ms all ease;
+}
+.result .renglon .fechaFixture, .partInd .renglon .fechaFixture, .tabla .renglon .fechaFixture {
+  width: 16%;
+  text-align: end;
+}
+.result .renglon .rivalFixture, .partInd .renglon .rivalFixture, .tabla .renglon .rivalFixture {
+  width: 38%;
+}
+.result .renglon .escudito, .partInd .renglon .escudito, .tabla .renglon .escudito {
+  width: 4%;
+}
+.result .renglon .escudito img, .partInd .renglon .escudito img, .tabla .renglon .escudito img {
+  height: 20px;
+  max-width: 20px;
+}
+.result .renglon .condFixture, .partInd .renglon .condFixture, .tabla .renglon .condFixture {
+  width: 18%;
+}
+.result .renglon .golFixture, .partInd .renglon .golFixture, .tabla .renglon .golFixture {
+  width: 12%;
+}
+.result .renglon .eqTabla, .partInd .renglon .eqTabla, .tabla .renglon .eqTabla {
+  width: 30%;
+  margin-left: 7%;
+  font-size: 1vw;
+}
+.result .renglon .resT, .partInd .renglon .resT, .tabla .renglon .resT {
+  width: 9%;
+  text-align: center;
+}
+.result .renglon .pts, .partInd .renglon .pts, .tabla .renglon .pts {
+  font-weight: 800;
+}
+.result .renglon div, .partInd .renglon div, .tabla .renglon div {
+  color: #fff;
+  font-size: 1.3vw;
+  margin: 2px 5px;
+}
+.result .renglon:hover, .partInd .renglon:hover, .tabla .renglon:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.galeria {
+  max-width: 40vw;
+  margin-left: 3vw;
+}
+.galeria img {
+  width: 40vw;
+  border: 2px solid #fff;
+  box-shadow: 2vw 2vw 5vw #000;
+}
+
+/*# sourceMappingURL=main.css.map */

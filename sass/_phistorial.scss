@@ -1,0 +1,33 @@
+.historial{
+    width: 76vw;
+    margin:120px 12vw 35px 12vw;
+    background-color: rgba($color6, 0.4);
+    backdrop-filter: blur(6px);
+    border: 2px solid $color7;
+    border-radius: 10px;
+    padding-top: 35px;
+    .renglon-partido{
+        display: flex;
+        color: $color7;
+        font-size: 16px;
+        height: 24px;
+        transition: 450ms;
+        &:hover{
+            background-color: rgba($color6, 0.4);
+            cursor: pointer;
+        }
+        .datos-partido{
+            width: 22%;
+            text-align: center;
+            line-height: 24px;
+            img{
+                height: 16px;
+                padding-top: 4px;
+            }
+        }
+        .gol-partido{
+            text-align: center;
+            width: 8%;
+        }
+    }
+}

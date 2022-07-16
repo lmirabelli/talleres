@@ -1,0 +1,52 @@
+.plantel {
+    margin: 120px 8vw 30px 8vw;
+    width: 84vw;
+    border: 3px solid $color7;
+    padding: 6px;
+    background-color: rgba($color6, 0.4);
+    backdrop-filter: blur(6px);
+
+    .plantel-renglon {
+       
+        margin: 3px 0;
+        padding: 3px 0;
+        height: 46px;
+        transition: 450ms;
+
+        &:hover {
+            background-color: rgba($color6, 0.4);
+            cursor: pointer;
+            border-bottom: 2px solid rgba($color6, 0.4);
+        }
+        a{
+            display: flex;
+            width: 100%;
+            text-decoration: none;
+            .plantel-img{
+                width: 10%;  
+                img{
+                    padding-left: calc(50% - 20px);
+                    height: 40px;
+                }
+            }
+            .plantel-nombre, .plantel-nacimiento, .plantel-cantera{
+                color: $color7;
+                padding-top: 8px;
+                filter: drop-shadow(0px 0px 5px $color3);
+                text-align: center;
+            }
+            .plantel-nombre{
+                width: 35%;
+            }
+            .plantel-nacimiento{
+                width: 25%;
+            }
+            .plantel-cantera{
+                width: 30%;
+                img{
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
