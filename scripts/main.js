@@ -1,4 +1,4 @@
-menu && (menu.innerHTML = `<img src="../imagenes/logo.png">
+menu && (menu.innerHTML = `<img src="https://i.ibb.co/NCFWL81/cat.png">
                             <div class="botones"><a href="../index.html">Inicio</a>
                             <a href="../html/jugadores.html">Jugadores</a>
                             <a href="../html/partidos.html">Partidos</a>

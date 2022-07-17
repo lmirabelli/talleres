@@ -24,7 +24,7 @@ listaRivales.push(new rival('San Miguel','https://i.ibb.co/9bqMHsx/sanmiguel.png
 listaRivales.push(new rival('Dock Sud','https://i.ibb.co/cF4XDdL/docke.png',1916,'Dock Sud'));
 listaRivales.push(new rival('UAI Urquiza','https://i.ibb.co/MM8xT25/uai.png',1950,'Villa Lynch'));
 listaRivales.push(new rival('Villa San Carlos','https://i.ibb.co/yWJbvww/vasancarlos.png',1925,'Berisso'));
-listaRivales.push(new rival('Talleres (RE)','../imagenes/logo.png',1906,'Remedios de Escalada'));
+listaRivales.push(new rival('Talleres (RE)','https://i.ibb.co/NCFWL81/cat.png',1906,'Remedios de Escalada'));
 listaRivales.push(new rival('Estudiantes (LP)','https://i.ibb.co/PQHsCXZ/estlp.png',1905,'La PLata'));
 listaRivales.push(new rival('San Lorenzo','https://i.ibb.co/2cyGgyv/casla.png',1908,'Flores (CABA)'));
 listaRivales.push(new rival('River Plate','https://i.ibb.co/KzGqjGs/river.png',1901,'Nuñez (CABA)'));

@@ -10,7 +10,7 @@ const tarjetaJugador = document.getElementById('card');
 const plantel = document.getElementById('plantel');
 const historial = document.getElementById('historial');
 
-let rootFotoIndex = ['./imagenes/grandes/cani.jpg','./imagenes/grandes/eldiego.jpg']
+let rootFotoIndex = ['https://i.ibb.co/qsmQDXS/cani.jpg','https://i.ibb.co/Cn52SFH/eldiego.jpg']
 
 
 // Planteles
