@@ -23,7 +23,7 @@ body {
   margin: 15px 0 0 10px;
   filter: drop-shadow(0 2px 3px #150000);
   animation: roteishon 1.5s infinite linear;
-  z-index: 2;
+  z-index: 10;
 }
 
 ::-webkit-scrollbar {
@@ -411,6 +411,59 @@ body {
     width: 45%;
   }
 }
+.modal {
+  display: none;
+  width: 30vw;
+  height: 250px;
+  position: fixed;
+  z-index: 4;
+  background: rgba(255, 240, 240, 0.18);
+  box-shadow: 0 6px 20px 0 rgba(255, 240, 240, 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 240, 240, 0.3);
+  border-radius: 1.5rem;
+  transform: scale(0);
+  overflow: hidden;
+  top: calc(50vh - 125px);
+  left: 35vw;
+  transition: transform 0.35s ease-out;
+}
+.modal h2 {
+  width: 100%;
+  margin: 1.5rem 0;
+  font-family: "Glass Antiqua", serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #fb0707;
+  text-shadow: 0 0 12px #150000;
+}
+.modal p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  text-shadow: 0 0 4px #fff0f0;
+}
+.modal button {
+  width: 30%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 35%;
+  border: 2px solid #fb0707;
+  border-radius: 15px;
+  background: rgba(21, 0, 0, 0.7);
+  color: #fff0f0;
+  box-shadow: 0 0 8px 4px #150000;
+  transition: transform 0.3s;
+}
+.modal button:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
 footer {
   background: #fff0f0;
   color: #750000;

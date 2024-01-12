@@ -89,3 +89,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.querySelector('.modal');
+  
+    // Espera 2 segundos antes de mostrar el modal
+    setTimeout(function () {
+      // Añade la clase 'mostrar' para aplicar la transición
+      modal.style.display = 'block';
+    }, 2000);
+    setTimeout(function () {
+        modal.style.transform = 'scale(1)'
+      }, 2100);
+  });
+
+function cerrarModal() {
+    const modal = document.querySelector('.modal');
+    modal.style.transform = 'scale(0)';
+    setTimeout(function () {
+        modal.style.display = 'none';
+      }, 500);
+}
