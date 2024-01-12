@@ -1,0 +1,49 @@
+.menu{
+    width: 15rem;
+    height: 80vh;
+    position: fixed;
+    top: 10vh;
+    @include glassmorphismo;
+    border-radius: 0 30px 30px 0;
+    border-left: 0;
+    transform: translateX(-14rem);
+    transition: transform 0.7s;
+    z-index: 1;
+    &:hover{
+        transform: translateX(0rem);
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 50%;
+            filter: drop-shadow(0 4px 12px $color-negro);
+            animation: roteishon 6s infinite linear ;
+        }
+    }
+    .btnbox-menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1.5rem 0;
+        a{
+            width: 70%;
+            background: $color-blanco;
+            margin: 0.3rem;
+            text-align: center;
+            color: $color-2;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 2px solid $color-2;
+            box-shadow: 0 4px 8px $color-negro;
+            transition: background 0.5s, color 0.5s, scale 0.5s;
+            &:hover{
+                background-color: $color-2;
+                color: $color-blanco;
+                scale: 0.94;
+            }
+          }
+    }
+}

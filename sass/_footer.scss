@@ -1,0 +1,13 @@
+footer{
+    background: $color-blanco;
+    color: $color-2;
+    font-family: $fuente-titulos;
+    border-top: 2px solid $color-2;
+    box-shadow: 0 0 12px 4px $color-blanco;
+    height: 75px;
+    div{
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+    }
+}

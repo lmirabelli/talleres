@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Glass+Antiqua&family=Satisfy&display=swap');
+
+$fuente-principal: 'Eczar', sans-serif;
+$fuente-titulos: 'Glass Antiqua', serif;
+$fuente-destacada: 'Satisfy', serif;
+
+$color-blanco: #fff0f0;
+$color-1: #fb0707;
+$color-2: #750000;
+$color-3: #0032ac;
+$color-negro: #150000;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuente-principal;
+}
+
+body {
+    background: fixed url('../images/background.png');
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#cursorImage {
+    position: fixed;
+    pointer-events: none;
+    width: 20px;
+    margin: 15px 0 0 10px;
+    filter: drop-shadow(0 2px 3px $color-negro);
+    animation: roteishon 1.5s infinite linear ;
+    z-index: 2;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $color-1;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: $color-2; 
+  }
+
+@mixin glassmorphismo {
+    background: rgba($color-blanco, .18);
+    box-shadow: 0 6px 20px 0 rgba($color-blanco, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba($color-blanco, 0.3);
+}
+
+@keyframes roteishon {
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+    
+}
